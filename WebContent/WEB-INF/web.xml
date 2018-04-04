@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>LifeSavior</display-name>
+  <description>
+        This is a simple web application .
+    </description>
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.lsa.login.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SignUpController</servlet-name>
+    <servlet-class>com.lsa.login.controller.SignUpController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUpController</servlet-name>
+    <url-pattern>/SignUpController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProfileCreationController</servlet-name>
+    <servlet-class>com.lsa.login.controller.ProfileCreationController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileCreationController</servlet-name>
+    <url-pattern>/ProfileCreationController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LSSController</servlet-name>
+    <servlet-class>com.lsa.controller.LSSController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LSSController</servlet-name>
+    <url-pattern>/LSSController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+        <servlet-name>verify-code</servlet-name>
+        <servlet-class>com.twilio.verification.servlet.VerifyCodeServlet</servlet-class>
+    </servlet>
+      <servlet-mapping>
+        <servlet-name>verify-code</servlet-name>
+        <url-pattern>/verify-code</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>resend-token</servlet-name>
+        <servlet-class>com.twilio.verification.servlet.ResendTokenServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>resend-token</servlet-name>
+        <url-pattern>/resend-token</url-pattern>
+    </servlet-mapping>
+</web-app>

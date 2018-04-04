@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="alice">Medical Emergency team, request your immediate assistance for the incident reported for Naga Jothi at Hitech city area. Request you to look at the email for more details. Repeating. Medical Emergency team, request your immediate assistance for the incident reported for Naga Jothi at Hitech city area. Request you to look at the email for more details.</Say>
+    <!-- <Play>http://demo.twilio.com/docs/classic.mp3</Play> -->
+</Response>
